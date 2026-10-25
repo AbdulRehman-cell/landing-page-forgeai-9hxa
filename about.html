@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About — ForgeAI | We're building the last website builder you'll ever need</title>
+<meta name="description" content="ForgeAI exists because building a website still takes too long, costs too much, and depends on too many people saying yes. Meet the team forging the future of the web.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    function pin(el,cls){el.classList.add(cls);el.style.setProperty('opacity','1','important');el.style.setProperty('visibility','visible','important');el.style.transform='';}
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,conv[c]);
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,a[1]);
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+<header id="site-header">
+  <nav class="container">
+    <a href="index.html" class="logo">Forge<span>AI</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html" class="active">About</a>
+    </div>
+    <a href="pricing.html" class="btn-primary nav-cta">Start Forging — Free</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ABOUT HERO -->
+  <section class="hero about-hero" id="about-hero">
+    <img src="https://picsum.photos/seed/aboutteam1/1900/1000" alt="Team collaborating around a screen in a modern dark office" class="hero-bg" width="1900" height="1000">
+    <div class="hero-overlay"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="container hero-content hero-content-narrow">
+      <span class="hero-eyebrow animate-in">OUR STORY</span>
+      <h1 class="animate-in animate-in-delay-1">We're building the last website builder you'll ever need.</h1>
+      <p class="hero-sub animate-in animate-in-delay-2">We got tired of watching good ideas die in design queues. ForgeAI exists because building a website still takes too long, costs too much, and depends on too many people saying yes.</p>
+    </div>
+  </section>
+
+  <!-- MISSION STATEMENT -->
+  <section class="section" id="mission">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <span class="section-label">Why We Started Forging</span>
+        <h2>Collapse the distance between an idea and a live website.</h2>
+      </div>
+      <p class="mission-statement animate-in">Our mission: collapse the distance between an idea and a live, working website to under five minutes — without making it look generated. Every founder deserves a site that feels hand-built, forged with the same care a senior design team would bring, minus the six-week timeline and the invoice that comes with it.</p>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- TIMELINE -->
+  <section class="section surface" id="timeline">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Milestones</span>
+        <h2>From a rough idea to 14,000+ live sites</h2>
+        <p>A short history of a company that moves faster than its own roadmap.</p>
+      </div>
+      <div class="steps-timeline about-timeline">
+        <div class="step animate-in">
+          <div class="step-number">2023</div>
+          <h3>Founded</h3>
+          <p>Three engineers, tired of watching clients wait eight weeks for a landing page, started prototyping a prompt-to-site generation engine in a shared apartment.</p>
+        </div>
+        <div class="step animate-in animate-in-delay-1">
+          <div class="step-number">2024</div>
+          <h3>Public Beta</h3>
+          <p>ForgeAI opened its doors to 500 beta founders. The first 1,000 sites were forged in under three months — most launched same-day.</p>
+        </div>
+        <div class="step animate-in animate-in-delay-2">
+          <div class="step-number">2024</div>
+          <h3>Design System Engine</h3>
+          <p>Shipped the live design-system generator — no more recycled themes. Every ForgeAI site got its own forged palette, type scale, and components.</p>
+        </div>
+        <div class="step animate-in animate-in-delay-3">
+          <div class="step-number">Today</div>
+          <h3>14,000+ Sites Forged</h3>
+          <p>Founders, agencies, and solo builders across 60+ countries now ship production websites with ForgeAI before their coffee cools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- TEAM GRID -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">The Forge Crew</span>
+        <h2>The people behind the forge</h2>
+        <p>A small, opinionated team obsessed with making AI-built sites feel hand-crafted.</p>
+      </div>
+      <div class="grid-4 team-grid">
+        <div class="card team-card animate-in">
+          <img src="https://i.pravatar.cc/300?img=12" alt="Portrait of Dara Osei, Co-Founder & CEO" width="300" height="300" class="img-rounded team-avatar">
+          <h3>Dara Osei</h3>
+          <span class="team-role">Co-Founder & CEO</span>
+          <p>Believes every landing page is a pitch deck in disguise.</p>
+        </div>
+        <div class="card team-card animate-in animate-in-delay-1">
+          <img src="https://i.pravatar.cc/300?img=33" alt="Portrait of Mateo Reyes, Co-Founder & CTO" width="300" height="300" class="img-rounded team-avatar">
+          <h3>Mateo Reyes</h3>
+          <span class="team-role">Co-Founder & CTO</span>
+          <p>Spent six years building design tools before deciding the real fix was removing the tool entirely.</p>
+        </div>
+        <div class="card team-card animate-in animate-in-delay-2">
+          <img src="https://i.pravatar.cc/300?img=47" alt="Portrait of Priya Nair, Head of Design Systems" width="300" height="300" class="img-rounded team-avatar">
+          <h3>Priya Nair</h3>
+          <span class="team-role">Head of Design Systems</span>
+          <p>Taught the forge to tell the difference between "bold" and "unreadable."</p>
+        </div>
+        <div class="card team-card animate-in animate-in-delay-3">
+          <img src="https://i.pravatar.cc/300?img=52" alt="Portrait of Jonah Fischer, Head of Growth" width="300" height="300" class="img-rounded team-avatar">
+          <h3>Jonah Fischer</h3>
+          <span class="team-role">Head of Growth</span>
+          <p>Measures success in sites shipped, not demos booked.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- VALUES STRIP -->
+  <section class="section surface" id="values">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">What We Believe</span>
+        <h2>Three values we don't compromise on</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card feature-card animate-in">
+          <div class="card-icon feature-icon">🎯</div>
+          <h3>Precision over templates</h3>
+          <p>Templates force your business into someone else's shape. ForgeAI architects a layout and design system built around what you actually sell.</p>
+        </div>
+        <div class="card feature-card animate-in animate-in-delay-1">
+          <div class="card-icon feature-icon">⚡</div>
+          <h3>Speed without sloppiness</h3>
+          <p>Fast doesn't mean rough. Every generated site ships with real type hierarchy, real accessibility, and real production code underneath.</p>
+        </div>
+        <div class="card feature-card animate-in animate-in-delay-2">
+          <div class="card-icon feature-icon">🔑</div>
+          <h3>Ownership, always</h3>
+          <p>No lock-in, no hostage code. Export clean React/Tailwind any time and take your site wherever you want it to live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CULTURE / PHOTO STRIP -->
+  <section class="section" id="culture">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">A Look Inside</span>
+        <h2>Where the forging happens</h2>
+        <p>A distributed team that meets in person a few times a year — and ships every single day in between.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-in">
+          <img src="https://picsum.photos/seed/aboutoffice1/700/520" alt="Developer working on laptop with AI code interface" width="700" height="520">
+          <div class="gallery-overlay"><span>Late-night shipping session</span></div>
+        </div>
+        <div class="gallery-item animate-in animate-in-delay-1">
+          <img src="https://picsum.photos/seed/aboutoffice2/700/520" alt="Team collaborating around a screen in a modern office" width="700" height="520">
+          <div class="gallery-overlay"><span>Quarterly offsite, design review</span></div>
+        </div>
+        <div class="gallery-item animate-in animate-in-delay-2">
+          <img src="https://picsum.photos/seed/aboutoffice3/700/520" alt="Close-up of a website builder drag-and-drop interface on a tablet" width="700" height="520">
+          <div class="gallery-overlay"><span>Prototyping the design engine</span></div>
+        </div>
+        <div class="gallery-item animate-in animate-in-delay-3">
+          <img src="https://picsum.photos/seed/aboutoffice4/700/520" alt="Abstract generative UI dashboard on monitors" width="700" height="520">
+          <div class="gallery-overlay"><span>Watching the forge run live</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Come build the future of the web with us.</h2>
+      <p>We're hiring across engineering, design, and growth — all remote, all obsessed with shipping.</p>
+      <div class="hero-actions center">
+        <a href="pricing.html" class="btn-primary">Start Forging — Free</a>
+        <a href="#team" class="btn-ghost">View Open Roles ▸</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-logo-col">
+      <a href="index.html" class="logo footer-logo">Forge<span>AI</span></a>
+      <p>Forged in code. Shipped in minutes.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter / X">𝕏</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="GitHub">gh</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="pricing.html#faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="about.html#team">Team</a>
+      <a href="about.html#team">Careers</a>
+      <a href="about.html#mission">Our Mission</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="features.html">Docs</a>
+      <a href="index.html#features">Blog</a>
+      <a href="pricing.html">Changelog</a>
+      <a href="index.html">Status</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2024 ForgeAI, Inc. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

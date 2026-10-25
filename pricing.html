@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pricing — ForgeAI | Simple pricing. No scope creep.</title>
+<meta name="description" content="Every ForgeAI plan includes the full generation engine. Pick based on how many sites you're forging and how much power you need.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    function pin(el,cls){el.classList.add(cls);el.style.setProperty('opacity','1','important');el.style.setProperty('visibility','visible','important');el.style.transform='';}
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,conv[c]);
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,a[1]);
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+<header id="site-header">
+  <nav class="container">
+    <a href="index.html" class="logo">Forge<span>AI</span></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html" class="active">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <a href="pricing.html" class="btn-primary nav-cta">Start Forging — Free</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- PRICING HERO -->
+  <section class="hero" id="hero" style="min-height:62vh;">
+    <div class="hero-overlay"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="container hero-content">
+      <span class="hero-eyebrow animate-in">PRICING</span>
+      <h1 class="animate-in animate-in-delay-1">Pricing that doesn't slow you <span class="accent-text">down</span>.</h1>
+      <p class="hero-sub animate-in animate-in-delay-2">Every plan includes the full generation engine — pick based on how many sites you're forging and how much power you need.</p>
+    </div>
+  </section>
+
+  <!-- PRICING TOGGLE + TIERS -->
+  <section class="section" id="plans">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Choose your forge</span>
+        <h2>Three tiers. One engine.</h2>
+        <p>Switch between monthly and annual billing — annual saves roughly 17% on every paid tier.</p>
+      </div>
+
+      <div class="billing-toggle" id="billing-toggle">
+        <span class="toggle-label active" data-cycle="monthly">Monthly</span>
+        <button class="toggle-switch" id="toggle-switch" aria-label="Toggle annual billing" aria-pressed="false">
+          <span class="toggle-knob"></span>
+        </button>
+        <span class="toggle-label" data-cycle="annual">Annual <span class="badge badge-success">Save 17%</span></span>
+      </div>
+
+      <div class="grid-3 pricing-grid">
+        <div class="card pricing-card animate-in">
+          <h3>Starter</h3>
+          <p class="pricing-tagline">For testing the forge.</p>
+          <div class="price-display">
+            <span class="price-amount">$0</span><span class="price-period">/mo</span>
+          </div>
+          <ul class="pricing-features">
+            <li>1 live site</li>
+            <li>ForgeAI subdomain</li>
+            <li>Core components</li>
+            <li>Community support</li>
+          </ul>
+          <a href="#" class="btn-secondary pricing-cta">Start Forging — Free</a>
+        </div>
+
+        <div class="card pricing-card featured animate-in animate-in-delay-1">
+          <div class="pricing-ribbon">Most Popular</div>
+          <h3>Pro</h3>
+          <p class="pricing-tagline">For builders going live.</p>
+          <div class="price-display">
+            <span class="price-amount" data-monthly="29" data-annual="24">$29</span><span class="price-period">/mo</span>
+          </div>
+          <p class="price-sub" id="pro-annual-note" style="display:none;">Billed $288/yr</p>
+          <ul class="pricing-features">
+            <li>5 sites</li>
+            <li>Custom domains</li>
+            <li>Code export</li>
+            <li>Priority generation speed</li>
+            <li>Email support</li>
+          </ul>
+          <a href="#" class="btn-primary pricing-cta">Start Forging — Free</a>
+        </div>
+
+        <div class="card pricing-card animate-in animate-in-delay-2">
+          <h3>Scale</h3>
+          <p class="pricing-tagline">For agencies & teams.</p>
+          <div class="price-display">
+            <span class="price-amount" data-monthly="89" data-annual="74">$89</span><span class="price-period">/mo</span>
+          </div>
+          <p class="price-sub" id="scale-annual-note" style="display:none;">Billed $888/yr</p>
+          <ul class="pricing-features">
+            <li>Unlimited sites</li>
+            <li>Team seats</li>
+            <li>White-label export</li>
+            <li>Version history</li>
+            <li>Priority support + onboarding call</li>
+          </ul>
+          <a href="#" class="btn-secondary pricing-cta">Start Forging — Free</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- COMPARISON TABLE -->
+  <section class="section surface" id="compare">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Detail</span>
+        <h2>Compare every detail</h2>
+        <p>Full feature matrix across all plans, including Enterprise.</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Starter</th>
+              <th>Pro</th>
+              <th>Scale</th>
+              <th>Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Live sites</td>
+              <td>1</td>
+              <td>5</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Custom domains</td>
+              <td>—</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Code export (React/Tailwind)</td>
+              <td>—</td>
+              <td>✓</td>
+              <td>✓ White-label</td>
+              <td>✓ White-label</td>
+            </tr>
+            <tr>
+              <td>Generation speed</td>
+              <td>Standard</td>
+              <td>Priority</td>
+              <td>Priority</td>
+              <td>Dedicated capacity</td>
+            </tr>
+            <tr>
+              <td>Team seats</td>
+              <td>1</td>
+              <td>3</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Version history</td>
+              <td>—</td>
+              <td>7 days</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>SEO auto-optimization</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Support</td>
+              <td>Community</td>
+              <td>Email</td>
+              <td>Priority + onboarding call</td>
+              <td>Dedicated CSM</td>
+            </tr>
+            <tr>
+              <td>SSO & audit logs</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Custom contracts & invoicing</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Pricing</td>
+              <td>$0</td>
+              <td>$29/mo</td>
+              <td>$89/mo</td>
+              <td><a href="#enterprise-contact">Talk to us</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- ENTERPRISE CONTACT -->
+  <section class="section" id="enterprise-contact">
+    <div class="container">
+      <div class="grid-2 enterprise-grid">
+        <div class="animate-in">
+          <span class="section-label">Enterprise</span>
+          <h2>Need something bigger than Scale?</h2>
+          <p class="section-sub-text">SSO, custom contracts, dedicated infrastructure, and a CSM who knows your stack. Tell us what you're forging and we'll build a plan around it.</p>
+          <ul class="pricing-features enterprise-list">
+            <li>Unlimited sites & team seats</li>
+            <li>SSO, audit logs & compliance support</li>
+            <li>Dedicated generation capacity</li>
+            <li>Custom contracts & invoicing</li>
+          </ul>
+        </div>
+        <div class="card animate-in animate-in-delay-1">
+          <h3>Talk to us</h3>
+          <p class="pricing-tagline">We'll reply within one business day.</p>
+          <form id="enterprise-form" class="contact-form">
+            <div class="form-row">
+              <label for="ent-name">Name</label>
+              <input type="text" id="ent-name" name="name" placeholder="Jordan Reyes" required>
+            </div>
+            <div class="form-row">
+              <label for="ent-email">Work email</label>
+              <input type="email" id="ent-email" name="email" placeholder="jordan@company.com" required>
+            </div>
+            <div class="form-row">
+              <label for="ent-company">Company</label>
+              <input type="text" id="ent-company" name="company" placeholder="Company name" required>
+            </div>
+            <div class="form-row">
+              <label for="ent-message">What are you building?</label>
+              <textarea id="ent-message" name="message" rows="4" placeholder="Tell us about your team and use case..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;">Send Inquiry</button>
+            <div class="alert alert-success" id="ent-success" style="display:none; margin-top:16px;">Thanks — we'll be in touch within one business day.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- FAQ -->
+  <section class="section surface" id="faq">
+    <div class="container container-narrow">
+      <div class="section-head">
+        <span class="section-label">FAQ</span>
+        <h2>Questions, answered</h2>
+        <p>Everything you need to know before you start forging.</p>
+      </div>
+
+      <div class="accordion" id="faq-accordion">
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Do I own the code ForgeAI generates?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Yes. On Pro and Scale plans you can export clean React + Tailwind code at any time and host it anywhere — no lock-in, no licensing fees, no asterisks. Starter sites live on a ForgeAI subdomain but the content and design are still yours.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Can I switch plans later?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Absolutely. Upgrade or downgrade anytime from your dashboard — changes are prorated immediately, so you only ever pay for what you use.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>What happens if I exceed my site limit?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>We'll prompt you to upgrade before any site goes offline. Nothing is deleted automatically — you're always in control of what stays live.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Is there a free trial on paid plans?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Starter is free forever with no card required, so you can fully test the generation engine before upgrading. Pro and Scale are billed from day one, with a 14-day money-back guarantee.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>How does annual billing work?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Annual plans are billed once a year at roughly a 17% discount versus paying monthly. You can still cancel anytime — we prorate refunds for unused months.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Can I cancel anytime?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Yes — cancel from account settings with one click. Your sites stay live until the end of your current billing period, and you can export your code before you go.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>Do custom domains cost extra?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>No — custom domain connections are included free on Pro and Scale. You just need to own the domain through your preferred registrar.</p>
+          </div>
+        </div>
+        <div class="accordion-item animate-in">
+          <button class="accordion-trigger" aria-expanded="false">
+            <span>What does "priority generation speed" mean?</span>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-panel">
+            <p>Pro and Scale requests are routed to dedicated compute, cutting generation time roughly in half versus Starter during peak hours — handy when you're iterating live in front of a client.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Free to start. No card needed.</h2>
+      <p>Forge your first site free and see production-ready code in minutes — upgrade only when you're ready to scale.</p>
+      <a href="#plans" class="btn-primary">Start Forging — Free</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col footer-logo-col">
+      <a href="index.html" class="logo footer-logo">Forge<span>AI</span></a>
+      <p>Forged in code. Shipped in minutes.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter">𝕏</a>
+        <a href="#" aria-label="GitHub">⌨</a>
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#how-it-works">How it Works</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="about.html#careers">Careers</a>
+      <a href="about.html#team">Team</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Docs</a>
+      <a href="#">Blog</a>
+      <a href="#">Changelog</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Security</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2024 ForgeAI. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

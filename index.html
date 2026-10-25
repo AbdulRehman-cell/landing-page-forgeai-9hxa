@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ForgeAI — Describe it. Forge it. Ship it.</title>
+<meta name="description" content="ForgeAI turns a single prompt into a production-ready website — fully designed, written, and coded — so founders ship in minutes instead of commissioning months.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<style>
+@keyframes fa-emergency-reveal { to { opacity: 1 !important; visibility: visible !important; } }
+.scroll-reveal:not(.is-visible),.reveal:not(.active):not(.is-visible),.fade-in:not(.visible):not(.in),.slide-in:not(.visible):not(.in),.fade-up:not(.is-visible),.fade-down:not(.is-visible),.zoom-in:not(.is-visible),.animate:not(.animated),.animate-up:not(.in),.will-animate:not(.animated),.animate-on-scroll:not(.animated):not(.in-view),.animate-on-load:not(.in-view):not(.visible),[data-aos]:not(.aos-animate),[data-reveal]:not(.in-view):not(.is-visible),[data-scroll]:not(.is-inview):not(.in-view),[data-animate]:not(.is-visible):not(.animated) { animation: fa-emergency-reveal 0.4s ease 4s forwards !important; }
+</style>
+<script>
+(function(){try{
+  var conv={'scroll-reveal':'is-visible','reveal':'active','fade-in':'visible','slide-in':'visible','fade-up':'is-visible','fade-down':'is-visible','zoom-in':'is-visible','animate-on-scroll':'animated','animate-on-load':'in-view','animate-up':'in','animate':'animated','will-animate':'animated'};
+  var attrs=[['data-reveal','in-view'],['data-scroll','is-inview'],['data-animate','is-visible'],['data-aos','aos-animate']];
+  function revealAllAbove(){
+    var vh=window.innerHeight||document.documentElement.clientHeight;
+    function pin(el,cls){el.classList.add(cls);el.style.setProperty('opacity','1','important');el.style.setProperty('visibility','visible','important');el.style.transform='';}
+    Object.keys(conv).forEach(function(c){
+      document.querySelectorAll('.'+c).forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,conv[c]);
+      });
+    });
+    attrs.forEach(function(a){
+      document.querySelectorAll('['+a[0]+']').forEach(function(el){
+        if(el.getBoundingClientRect().top<vh)pin(el,a[1]);
+      });
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',revealAllAbove);else revealAllAbove();
+}catch(e){}})();
+</script>
+</head>
+<body>
+  <div class="page-loader"><div class="loader-ring"></div></div>
+
+<header id="site-header">
+  <nav class="container">
+    <a href="index.html" class="logo">Forge<span>AI</span></a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">About</a>
+    </div>
+    <a href="pricing.html" class="btn-primary nav-cta">Start Forging — Free</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <img src="https://picsum.photos/seed/hero1/1900/1100" alt="Abstract generative UI dashboard glowing with electric blue data visualizations" class="hero-bg" width="1900" height="1100">
+    <div class="hero-overlay"></div>
+    <div class="hero-grid-pattern"></div>
+    <div class="container hero-content">
+      <span class="hero-eyebrow animate-in">AI-POWERED WEBSITE BUILDER</span>
+      <h1 class="animate-in animate-in-delay-1">Describe your business. <span class="accent-text">ForgeAI</span> builds the website.</h1>
+      <p class="hero-sub animate-in animate-in-delay-2">No templates to wrestle, no drag-and-drop grid fights — just describe your business and watch ForgeAI weld together copy, design, and code in real time.</p>
+      <div class="hero-actions animate-in animate-in-delay-3">
+        <a href="pricing.html" class="btn-primary">Start Forging — Free</a>
+        <a href="#how-it-works" class="btn-ghost">Watch Demo ▸</a>
+      </div>
+
+      <div class="hero-mockup animate-in animate-in-delay-4">
+        <div class="browser-chrome">
+          <div class="browser-dots"><span></span><span></span><span></span></div>
+          <div class="browser-url">forgeai.app/build</div>
+        </div>
+        <img src="https://picsum.photos/seed/dashboard2/1400/820" alt="ForgeAI builder interface showing a generated website preview with drag-and-drop panel" class="mockup-img" width="1400" height="820">
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BAR -->
+  <section class="section trust-bar">
+    <div class="container">
+      <p class="section-label center">Trusted by builders who'd rather ship than scroll Dribbble for inspiration</p>
+      <div class="logo-strip">
+        <span>NORTHWIND</span>
+        <span>VERTEX LABS</span>
+        <span>ORBITAL</span>
+        <span>HALCYON</span>
+        <span>PIXELFORGE</span>
+        <span>KINETIC</span>
+      </div>
+      <div class="stat-strip">
+        <div class="stat-item"><span class="stat-value">14,200+</span><span class="stat-label">Sites Forged</span></div>
+        <div class="stat-item"><span class="stat-value">97%</span><span class="stat-label">Launched Under 10 Min</span></div>
+        <div class="stat-item"><span class="stat-value">4.9/5</span><span class="stat-label">Builder Rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Core Engine</span>
+        <h2>One prompt. A fully engineered website.</h2>
+        <p>Everything a dev team does. None of the headcount.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card feature-card animate-in">
+          <div class="card-icon feature-icon">⚙️</div>
+          <h3>Prompt-to-Production Engine</h3>
+          <p>Tell it what you sell. ForgeAI architects structure, sections, hierarchy, and words that convert — not a vague mockup, a real site.</p>
+        </div>
+        <div class="card feature-card animate-in animate-in-delay-1">
+          <div class="card-icon feature-icon">🎨</div>
+          <h3>Live Design System Generator</h3>
+          <p>No recycled themes. Every build gets a custom palette, type scale, and component set forged specifically for your brand.</p>
+        </div>
+        <div class="card feature-card animate-in animate-in-delay-2">
+          <div class="card-icon feature-icon">🚀</div>
+          <h3>One-Click Deploy & Export</h3>
+          <p>Get a hosted live URL instantly, or export clean React/Tailwind code and own the whole stack outright.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- HOW IT WORKS -->
+  <section class="section surface" id="how-it-works">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Process</span>
+        <h2>Three steps. No code. No chaos.</h2>
+        <p>Prompt → Forge → Deploy. That's the whole workflow.</p>
+      </div>
+      <div class="steps-timeline">
+        <div class="step animate-in">
+          <div class="step-number">01</div>
+          <h3>Prompt</h3>
+          <p>Describe your business, audience, and goals in plain language — a sentence is enough to start the forge.</p>
+          <img src="https://picsum.photos/seed/feature3/600/420" alt="Person typing a prompt into an AI website builder interface on a laptop" width="600" height="420" class="img-rounded">
+        </div>
+        <div class="step animate-in animate-in-delay-1">
+          <div class="step-number">02</div>
+          <h3>Forge</h3>
+          <p>ForgeAI compiles copy, layout, imagery, and components into a cohesive, on-brand site in real time.</p>
+          <img src="https://picsum.photos/seed/forge4/600/420" alt="Abstract dashboard screens showing generative design pipelines" width="600" height="420" class="img-rounded">
+        </div>
+        <div class="step animate-in animate-in-delay-2">
+          <div class="step-number">03</div>
+          <h3>Deploy</h3>
+          <p>Hit publish for a live URL instantly, or export production-grade code and host it anywhere you like.</p>
+          <img src="https://picsum.photos/seed/deploy5/600/420" alt="Tablet showing a live website builder drag-and-drop interface" width="600" height="420" class="img-rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- SHOWCASE / GALLERY -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Showcase</span>
+        <h2>Forged live, by people who aren't developers</h2>
+        <p>Real businesses. Real sites. Zero designers.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item animate-in">
+          <img src="https://picsum.photos/seed/gallery1/700/520" alt="Generated website homepage for a coffee roastery brand" width="700" height="520">
+          <div class="gallery-overlay"><span>Ember & Bean — Roastery site, forged in 6 min</span></div>
+        </div>
+        <div class="gallery-item animate-in animate-in-delay-1">
+          <img src="https://picsum.photos/seed/gallery2/700/520" alt="Generated website homepage for a fitness studio brand" width="700" height="520">
+          <div class="gallery-overlay"><span>Pulse Studio — Fitness landing, forged in 4 min</span></div>
+        </div>
+        <div class="gallery-item animate-in animate-in-delay-2">
+          <img src="https://picsum.photos/seed/gallery3/700/520" alt="Generated website homepage for a design agency brand" width="700" height="520">
+          <div class="gallery-overlay"><span>Monro Studio — Agency site, forged in 8 min</span></div>
+        </div>
+        <div class="gallery-item animate-in">
+          <img src="https://picsum.photos/seed/gallery4/700/520" alt="Generated website homepage for a SaaS analytics product" width="700" height="520">
+          <div class="gallery-overlay"><span>Datalux — SaaS landing, forged in 5 min</span></div>
+        </div>
+        <div class="gallery-item animate-in animate-in-delay-1" style="grid-column:span 2">
+          <img src="https://picsum.photos/seed/gallery5/1400/520" alt="Generated website homepage for a travel and hospitality brand" width="1400" height="520">
+          <div class="gallery-overlay"><span>Wayfare Co. — Travel site, forged in 7 min</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-block animate-in">
+        <div class="testimonial card-glass">
+          <p class="testimonial-text">"I described my bakery in two sentences and had a fully branded site with copy that actually sounded like me. ForgeAI replaced a $4,000 agency quote."</p>
+          <div class="testimonial-author">
+            <img src="https://i.pravatar.cc/300?img=47" alt="Portrait of Dana Okafor" width="56" height="56">
+            <div>
+              <strong>Dana Okafor</strong>
+              <span class="testimonial-role">Founder, Ember & Bean</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"><span class="divider-dot"></span></div>
+
+  <!-- PRICING -->
+  <section class="section surface" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-label">Pricing</span>
+        <h2>Pricing that scales with your ambition</h2>
+        <p>Every plan includes the full generation engine. <a href="pricing.html">See full pricing →</a></p>
+      </div>
+      <div class="grid-3 pricing-grid">
+        <div class="card pricing-card animate-in">
+          <h3>Starter</h3>
+          <div class="price">$0<span>/mo</span></div>
+          <p class="plan-tag">For testing the forge.</p>
+          <ul class="plan-list">
+            <li>1 live site</li>
+            <li>ForgeAI subdomain</li>
+            <li>Core components</li>
+            <li>Community support</li>
+          </ul>
+          <a href="pricing.html" class="btn-secondary">Choose Starter</a>
+        </div>
+        <div class="card pricing-card featured animate-in animate-in-delay-1">
+          <span class="ribbon">Most Popular</span>
+          <h3>Pro</h3>
+          <div class="price">$29<span>/mo</span></div>
+          <p class="plan-tag">For builders going live.</p>
+          <ul class="plan-list">
+            <li>5 sites</li>
+            <li>Custom domains</li>
+            <li>Code export</li>
+            <li>Priority generation speed</li>
+            <li>Email support</li>
+          </ul>
+          <a href="pricing.html" class="btn-primary">Choose Pro</a>
+        </div>
+        <div class="card pricing-card animate-in animate-in-delay-2">
+          <h3>Scale</h3>
+          <div class="price">$89<span>/mo</span></div>
+          <p class="plan-tag">For agencies & teams.</p>
+          <ul class="plan-list">
+            <li>Unlimited sites</li>
+            <li>Team seats</li>
+            <li>White-label export</li>
+            <li>Version history</li>
+            <li>Priority support + onboarding</li>
+          </ul>
+          <a href="pricing.html" class="btn-secondary">Choose Scale</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="cta-section">
+    <div class="container cta-content">
+      <h2>Your competitors are still hiring agencies.</h2>
+      <p>Stop briefing designers. Start briefing AI.</p>
+      <a href="pricing.html" class="btn-primary">Start Forging — Free</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo footer-logo">Forge<span>AI</span></a>
+      <p>Forged in code. Shipped in minutes.</p>
+      <div class="social-icons">
+        <a href="#" aria-label="Twitter">🐦</a>
+        <a href="#" aria-label="GitHub">💻</a>
+        <a href="#" aria-label="LinkedIn">🔗</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="features.html">Features</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#how-it-works">How It Works</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="about.html">About</a>
+      <a href="about.html#careers">Careers</a>
+      <a href="about.html#values">Values</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="pricing.html#faq">FAQ</a>
+      <a href="features.html">Docs</a>
+      <a href="#">Status</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2024 ForgeAI. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
